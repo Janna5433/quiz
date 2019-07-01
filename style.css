@@ -4,6 +4,7 @@ body
 {
     background-image: linear-gradient(rgba(50,50,100,1), rgba(20,20,100,1));
     height:100vh;
+    margin: 0px;
 }
 
 #tpaita
@@ -140,11 +141,6 @@ footer
     color:red;
     font-size:20px;
     font-family:sans-serif;
-}
-
-#capital
-{
-    
 }
 
 #vasco
