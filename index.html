@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiz =D</title>
+<link rel="stylesheet" href="style.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    
+function myFunction1(){
+var teksti = document.getElementById("field1").value;
+
+    if(teksti == "Lissabon" || teksti == "lissabon"){
+          document.getElementById("tpaita").style.display = "none";
+          document.getElementById("capital").style.display = "none";
+          document.getElementById("vasco").style.display = "inline-block";
+        document.getElementById("vaarin").style.display = "none";
+    }
+    
+    else{
+        document.getElementById("vaarin").style.display = "inline";
+    }
+}
+    
+function myFunction2(){
+var teksti = document.getElementById("field2").value;
+
+    if(teksti == "1498"){
+          document.getElementById("mekko").style.display = "none";
+          document.getElementById("vasco").style.display = "none";
+          document.getElementById("alfons").style.display = "inline-block";
+        document.getElementById("vaarin").style.display = "inline";
+    }
+    
+    else{
+        document.getElementById("vaarin").style.display = "inline";
+    }
+}
+    
+function myFunction3(){
+var teksti = document.getElementById("field3").value;
+
+    if(teksti == "1139"){
+          document.getElementById("kengat").style.display = "none";
+          document.getElementById("alfons").style.display = "none";
+          document.getElementById("douro").style.display = "inline-block";
+        document.getElementById("vaarin").style.display = "inline";
+    }
+    
+    else{
+        document.getElementById("vaarin").style.display = "inline";
+    }
+}
+    
+function myFunction4(){
+var teksti = document.getElementById("field4").value;
+
+    if(teksti == "douro" || teksti == "Douro"){
+          document.getElementById("rintaliivit").style.display = "none";
+          document.getElementById("douro").style.display = "none";
+          document.getElementById("porto").style.display = "inline-block";
+        document.getElementById("vaarin").style.display = "inline";
+    }
+    
+    else{
+        document.getElementById("vaarin").style.display = "inline";
+    }
+}
+    
+function myFunction5(){
+var teksti = document.getElementById("field5").value;
+
+    if(teksti == "port" || teksti == "haven" || teksti == "harbour"){
+          document.getElementById("pikkuhousut").style.display = "none";
+          document.getElementById("porto").style.display = "none";
+        document.getElementById("vaarin").style.display = "inline";
+        
+        var d = document.getElementById("kroppa");
+        d.className += "slide";
+    }
+    
+    else{
+        document.getElementById("vaarin").style.display = "inline";
+    }
+}
+
+</script>
+</head>
+<body>
+
+<article id="wrapper">
+<div class="tpaita"><img id="tpaita" src="tpaita2.png"></div>
+<div class="mekko"><img id="mekko" src="mekko2.png"></div>
+<div class="kengat"><img id="kengat" src="kengat2.png"></div>
+<div class="rintaliivit"><img id="rintaliivit" src="rintaliivit.png"></div>
+<div class="pikkuhousut"><img id="pikkuhousut" src="pikkuhousut.png"></div>
+<div class="kroppa"><img id="kroppa" src="kroppa3.png"></div>
+</article>
+    
+<article class="kysymykset">
+
+<div id="capital">
+<p id="question1">What's the capital of Portugal?</p>
+    <input id="field1" class="field" type="text" value=""><div id="vaarin"> wrong</div><br><br>
+    <input class="button" onclick="myFunction1()" type="button" value="Answer">
+</div>
+    
+<div id="vasco">
+<p id="question2">Which year did Vasco da Gama arrive in India by ship as the first European?</p>
+    <input id="field2" class="field" type="text" name="capital" value=""><div id="vaarin"> wrong</div><br><br>
+    <input class="button" onclick="myFunction2()" type="button" value="Answer">
+</div>
+
+<div id="alfons">
+<p id="question3">Which year did Alfons I beat the Mauries in the Battle of Orique?</p>
+    <input id="field3" class="field" type="text" name="capital" value=""><div id="vaarin"> wrong</div><br><br>
+    <input class="button" onclick="myFunction3()" type="button" value="Answer">
+</div>
+    
+<div id="douro">
+<p id="question4">What is the biggest river in Porto called?</p>
+    <input id="field4" class="field" type="text" name="capital" value=""><div id="vaarin"> wrong</div><br><br>
+    <input class="button" onclick="myFunction4()" type="button" value="Answer">
+</div>
+    
+<div id="porto">
+<p id="question5">What does porto mean in portuguese?</p>
+    <input id="field5" class="field" type="text" name="capital" value=""><div id="vaarin"> wrong</div><br><br>
+    <input class="button" onclick="myFunction5()" type="button" value="Answer">
+</div>
+    
+</article>
+
+<footer></footer>
+
+</body>
+</html>

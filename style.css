@@ -1,0 +1,168 @@
+/*CSS*/
+
+body
+{
+    background-image: linear-gradient(rgba(50,50,100,1), rgba(20,20,100,1));
+    height:100vh;
+}
+
+#tpaita
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:2;
+    max-height:100%;
+}
+
+#kengat
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:1;
+    max-height:100%;
+}
+
+#mekko
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:2;
+    max-height:100%;
+}
+
+#rintaliivit
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:1;
+    max-height:100%;
+}
+
+#pikkuhousut
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:1;
+    max-height:100%;
+}
+
+#kroppa
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:0;
+    max-height:100%;
+}
+
+.slide
+{
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    right: 0;
+    z-index:0;
+    max-height:100%;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {left: 40%;}
+  to {left: 0%;}
+}
+
+.kysymykset
+{
+    position:absolute;
+    top:30%;
+    left:10%;
+    width:40%;
+}
+
+.field
+{
+    height:20px;
+    width:200px;
+    font-size:20px;
+}
+
+.button
+{
+    font-size:20px;
+    width:100px;
+    height:30px;
+    background-color:black;
+    color:white;
+    border: 2px solid white;
+}
+
+p
+{
+    color:white;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight:600;
+}
+
+footer
+{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:5%;
+    background-color:green;
+    z-index:-1;
+}
+
+#vaarin
+{
+    display:none;
+    color:red;
+    font-size:20px;
+    font-family:sans-serif;
+}
+
+#capital
+{
+    
+}
+
+#vasco
+{
+    display:none;
+}
+
+#alfons
+{
+    display:none;
+}
+
+#douro
+{
+    display:none;
+}
+
+#porto
+{
+    display:none;
+}
